@@ -49,7 +49,7 @@
                         
                 document.querySelector(".humidity").innerHTML=data.main.humidity+"%";
                         
-                                        document.querySelector(".wind").innerHTML=data.wind.speed +"km/h";
+                                        document.querySelector(".wind").innerHTML=(data.wind.speed)/3.6 +"km/h";
                                         if(data.weather[0].main==="Clouds"){
                                             weathericon.src="images/clouds.png";
                                         }
